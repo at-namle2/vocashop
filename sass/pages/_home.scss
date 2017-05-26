@@ -22,7 +22,7 @@
   .gallary-item:nth-child(3),
   .gallary-item:nth-child(5),
   .gallary-item:nth-child(6),
-  .gallary-item:nth-child(7){
+  .gallary-item:nth-child(7) {
     float: left;
     margin-right: 27px;
     width: 262px;
@@ -41,6 +41,32 @@
       height: 290px;
     }
     @extend %content;
+  }
+  .products {
+    position: relative;
+    .middle {
+      width: 100%;
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 16%;
+      left: 121%;
+      transform: translate(-50%, -50%);
+      &:hover {
+        opacity: 1;
+      }
+      .only {
+        .only-item {
+          width: 35px;
+          border: 1px solid map-get($color, black_4);
+          background-color: map-get($color, white);
+          margin-top: 10px;
+          a {
+            padding: 9px;
+          }
+        }
+      }
+    }
   }
 }
 .heading-category {
