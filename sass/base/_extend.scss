@@ -9,6 +9,10 @@
       position: absolute;
       bottom: 170px;
       left: 25%;
+      &:hover {
+        text-decoration: underline;
+        transition: all 0.5s lenear;
+      }
     }
     .jacket-item {
       color: map-get($color, white);
@@ -65,6 +69,9 @@
       font-size: 20px;
       font-weight: bold;
       color: map-get($color, black);
+      &:hover {
+        color: map-get($color, green);
+      }
     }
     .create {
       padding: 10px 0 15px;
@@ -75,3 +82,20 @@
     }
   }
 }
+%panel-title {
+  font-size: 20px;
+  color: map-get($color, black);
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  &:before {
+    background: map-get($color, black_3);
+    bottom: -4px;
+    content: "";
+    width: 25px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    z-index: 9;
+  }
+  }

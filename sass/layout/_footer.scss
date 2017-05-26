@@ -55,6 +55,9 @@
           a {
             color: map-get($color, black);
             line-height: 2.5;
+            &:hover {
+              color: map-get($color, green);
+            }
           }
         }
       }
@@ -80,9 +83,24 @@
         padding: 0;
         .link-item {
           a {
+            position: relative;
             text-decoration: none;
             color: map-get($color, black_3);
             line-height: 2.5;
+            &:hover {
+              padding-left: 12px;
+              color: map-get($color, green);
+              transition: all 3s lenear;
+               &:before {
+                top: 2px;
+                left: 0;
+                content: "\f105";
+                position: absolute;
+                font-size: 12px;
+                line-height: normal;
+                font-family: "fontawesome";
+              }
+            }
           }
         }
       }
@@ -96,6 +114,11 @@
     padding: 15px 0 15px;
     .copy {
       float: left;
+      a {
+        text-decoration: none;
+        color: map-get($color, black_3);
+        font-weight: 600;
+      }
     }
     .social {
       float: right;

@@ -52,6 +52,7 @@
         height: 45px;
         background: map-get($color, green);
         color: map-get($color, white);
+        cursor: pointer;
         .fa {
           font-size: 22px;
         }
@@ -96,6 +97,12 @@
             text-transform: uppercase;
             font-weight: 700;
             color: map-get($color, black);
+            &:hover {
+              color: map-get($color, green);
+            }
+          }
+          .fa:before {
+            padding-left: 5px;
           }
         }
       }
@@ -111,6 +118,7 @@
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
         margin-right: 40px;
+        cursor: pointer;
       }
     }
   }

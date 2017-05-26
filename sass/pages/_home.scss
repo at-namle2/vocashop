@@ -58,6 +58,9 @@
           text-decoration: none;
           font-weight: bold;
           color: map-get($color, black);
+          &:hover {
+            color: map-get($color, green);
+          }
         }
       }
     }
@@ -92,13 +95,11 @@
   .panel {
     padding: 60px 0 60px;
     .panel-title {
-      font-size: 20px;
-      color: map-get($color, black);
-      text-transform: uppercase;
+     @extend %panel-title;
     }
     .panel-desc {
       margin-top: 15px;
-      color: map-get($color, black);
+      color: map-get($color, black_4);
     }
     .input-group {
       width: 100%;
@@ -118,6 +119,9 @@
         text-transform: uppercase;
         color: white;
         background: black;
+        &:hover {
+          background: map-get($color, green);
+        }
       }
     }
   }
@@ -126,12 +130,8 @@
   background-color: map-get($color, black_2);
   padding: 60px 0;
   .laste {
-    .lastes-title {
-      float: left;
-      font-size: 20px;
-      color: map-get($color, black);
-      font-weight: 700;
-      text-transform: uppercase;
+    .last-title {
+      @extend %panel-title;
     }
     .pagination {
       float: right;
