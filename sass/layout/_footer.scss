@@ -1,0 +1,104 @@
+.main-footer {
+   border-top: 1px dotted map-get($color, gray_5);
+  .free-ship {
+    padding: 40px;
+    .free {
+      width: 100%;
+      .free-item {
+        float: left;
+        width: 350px;
+        .ball {
+          text-align: center;
+          border-right: 1px solid map-get($color, gray_5);
+          .fav {
+            width: 60px;
+            height: 60px;
+            font-size: 32px;
+            display: inline-block;
+            line-height: 60px;
+            vertical-align: top;
+          }
+          .span {
+            display: inline-block;
+            span {
+              color: map-get($color, black);
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.wrapper-footer {
+  background: map-get($color, gray_3);
+  .call {
+    width: 100%;
+    .call-item {
+      float: left;
+      width: 285px;
+      padding: 70px 0 70px;
+      .panel-title {
+        font-size: 18px;
+        color: map-get($color, black);
+        text-transform: uppercase;
+        padding-bottom: 30px;
+      }
+      .menu-list {
+        margin: 0;
+        padding: 0;
+        .menu-list-item {
+          .fab:before {
+            padding-right: 16px;
+          }
+          a {
+            color: map-get($color, black);
+            line-height: 2.5;
+          }
+        }
+      }
+      .list {
+        margin: 0;
+        padding: 0;
+        .list-item {
+          clear: both;
+          line-height: 25px;
+          padding-bottom: 10px;
+          .clock {
+            width: 35px;
+            height: 60px;
+            float: left;
+            color: map-get($color, black_3);
+            font-size: 22px;
+            padding-top: 6px;
+          }
+        }
+      }
+      .link {
+        margin: 0;
+        padding: 0;
+        .link-item {
+          a {
+            text-decoration: none;
+            color: map-get($color, black_3);
+            line-height: 2.5;
+          }
+        }
+      }
+     .lis {
+      padding-top: 50px;
+     }
+    }
+  }
+  .natural {
+    border-top: 1px dotted map-get($color, black_4);
+    padding: 15px 0 15px;
+    .copy {
+      float: left;
+    }
+    .social {
+      float: right;
+    }
+  }
+}

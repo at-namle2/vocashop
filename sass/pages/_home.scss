@@ -1,0 +1,208 @@
+.gallery {
+  width: 100%;
+  margin-top: 100px;
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(3) {
+    float: left;
+    margin-right: 27px;
+    width: 262px;
+    @extend %jacket;
+  }
+  .gallery-item:nth-child(4) {
+    margin-right: 0;
+    float: left;
+    @extend %jacket;
+  }
+}
+.gallary {
+  width: 100%;
+  .gallary-item:nth-child(1),
+  .gallary-item:nth-child(2),
+  .gallary-item:nth-child(3),
+  .gallary-item:nth-child(5),
+  .gallary-item:nth-child(6),
+  .gallary-item:nth-child(7){
+    float: left;
+    margin-right: 27px;
+    width: 262px;
+    .img {
+      width: 272px;
+      height: 290px;
+    }
+    @extend %content;
+  }
+  .gallary-item:nth-child(4),
+  .gallary-item:nth-child(8) {
+    margin-right: 0;
+    float: left;
+    .img {
+      width: 272px;
+      height: 290px;
+    }
+    @extend %content;
+  }
+}
+.heading-category {
+  padding: 80px 0 50px;
+  .tab-heading {
+    float: left;
+    .tab {
+      margin: 0;
+      padding: 0;
+      .tab-item {
+        display: inline-block;
+        a {
+          text-transform: uppercase;
+          padding-right: 50px;
+          text-decoration: none;
+          font-weight: bold;
+          color: map-get($color, black);
+        }
+      }
+    }
+  }
+  .tab-filler {
+    float: right;
+    .fil {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: map-get($color, green);
+    }
+  }
+}
+.woments {
+  width: 100%;
+  .woment-item:nth-child(1),
+  .woment-item:nth-child(2) {
+    float: left;
+    margin-right: 27px;
+    width: 360px;
+  }
+  .woment-item:nth-child(3) {
+    float: left;
+    width: 360px;
+    margin-right: 0;
+  }
+}
+.newletter {
+  background: url(../images/newletter/newletter.jpg) no-repeat;
+  background-size: 100%;
+  margin-top: 60px;
+  .panel {
+    padding: 60px 0 60px;
+    .panel-title {
+      font-size: 20px;
+      color: map-get($color, black);
+      text-transform: uppercase;
+    }
+    .panel-desc {
+      margin-top: 15px;
+      color: map-get($color, black);
+    }
+    .input-group {
+      width: 100%;
+      margin-top: 20px;
+      .input-email {
+        width: 36%;
+        height: 43px;
+        outline: none;
+        padding: 0 10px;
+      }
+      .button-sub {
+        width: 12%;
+        height: 46px;
+        margin-left: -4px;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        color: white;
+        background: black;
+      }
+    }
+  }
+}
+.laste-flui {
+  background-color: map-get($color, black_2);
+  padding: 60px 0;
+  .laste {
+    .lastes-title {
+      float: left;
+      font-size: 20px;
+      color: map-get($color, black);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .pagination {
+      float: right;
+      .left {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        line-height: 25px;
+        background: transparent;
+        color: map-get($color, gray_5);
+        font-size: 22px;
+        background-color: map-get($color, white);
+        border: 1px solid map-get($color, gray_5);
+        .fa-angle-left:before {
+          margin-left: 10px;
+        }
+        &:hover {
+          background-color: map-get($color, green);
+        }
+      }
+      .right {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        line-height: 25px;
+        background: transparent;
+        color: map-get($color, gray_5);
+        font-size: 22px;
+        background-color: map-get($color, white);
+        border: 1px solid map-get($color, gray_5);
+        .fa-angle-right:before {
+          margin-left: 10px;
+        }
+        &:hover {
+          background-color: map-get($color, green);
+        }
+      }
+    }
+  }
+  .lastes {
+    padding-top: 30px;
+    width: 100%;
+    .lastes-item:nth-child(1),
+    .lastes-item:nth-child(2) {
+      float: left;
+      width: 360px;
+      margin-right: 30px;
+      @extend %lates;
+    }
+    .lastes-item:nth-child(3) {
+      margin-right: 0;
+      float: left;
+      width: 360px;
+      @extend %lates;
+    }
+  }
+}
+.vinta {
+  .donors {
+    margin: 0;
+    padding: 0;
+    .donor-item {
+      display: inline-block;
+      padding-right: 40px;
+      img {
+        width: 150px;
+        height: 100px;
+      }
+    }
+    .donor-item:last-child {
+      padding-right: 0;
+    }
+  }
+}

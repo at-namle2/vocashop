@@ -1,0 +1,77 @@
+%jacket {
+  .jacket {
+    position: relative;
+    .title-jacket {
+      color: map-get($color, white);
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: 700;
+      position: absolute;
+      bottom: 170px;
+      left: 25%;
+    }
+    .jacket-item {
+      color: map-get($color, white);
+      font-size: 15px;
+      position: absolute;
+      bottom: 140px;
+      left: 30%;
+    }
+  }
+}
+%content {
+ .content {
+    margin-bottom: 40px;
+    .title-desc {
+      font-weight: 600;
+      color: map-get($color, black);
+      padding: 10px 0 10px;
+      &:hover {
+        color: map-get($color, green);
+      }
+    }
+    .price {
+      font-size: 16px;
+      .fat {
+        color: map-get($color, yellow);
+        padding-left: 5px;
+      }
+    }
+    .btn-button {
+      padding: 3px 15px;
+      color: map-get($color, gray_4);
+      font-size: 12px;
+      text-transform: uppercase;
+      border: 1px solid map-get($color, gray_4);
+      background:map-get($color, white);
+      outline: none;
+      cursor: pointer;
+      margin-top: 20px;
+      &:hover {
+        background-color: map-get($color, green);
+        color: map-get($color, white);
+      }
+      .fato:before {
+        padding-right: 5px;
+      }
+    }
+  }
+}
+%lates {
+  .latest-desc {
+    background: map-get($color, white);
+    padding: 30px;
+    .title-news {
+      font-size: 20px;
+      font-weight: bold;
+      color: map-get($color, black);
+    }
+    .create {
+      padding: 10px 0 15px;
+      .fav:before {
+        color: map-get($color, green);
+        padding: 0 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.wrapper-header {
+  .current-header {
+    height: 45px;
+    background: map-get($color, black);
+    .language {
+      float: left;
+      padding: 10px 20px;
+      .btn-link {
+        border:none;
+        outline: none;
+        background: map-get($color, black);
+        color: map-get($color, white);
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-left: 5px;
+        .name {
+          color: map-get($color, green);
+        }
+      }
+    }
+    .custome-center {
+      float: left;
+      margin: 10px 450px;
+      text-transform: uppercase;
+      text-align: center;
+      color: map-get($color, white);
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+    .account {
+      float: right;
+      line-height: 40px;
+      .btn-link {
+        border:none;
+        outline: none;
+        background: map-get($color, black);
+        color: map-get($color, white);
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-left: 5px;
+        .name {
+          color: map-get($color, green);
+        }
+      }
+      .span {
+        background: map-get($color, green);
+      }
+      .btn-button {
+        position: relative;
+        border: none;
+        outline: none;
+        height: 45px;
+        background: map-get($color, green);
+        color: map-get($color, white);
+        .fa {
+          font-size: 22px;
+        }
+        .cart {
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 16px;
+          top: 0px;
+          font-size: 12px;
+          height: 22px;
+          line-height: 20px;
+          padding: 0 8px;
+          position: absolute;
+          right: calc(100% - 35px);
+        }
+        .cart2 {
+          margin-left: 15px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .vacashop {
+    padding: 20px 0 20px;
+    background: map-get($color, white);
+    .logo {
+      float: left;
+      padding: 0 10px;
+    }
+    .nav {
+      float: left;
+      margin: 10px 336px;
+      .menu-main {
+        margin: 0;
+        padding: 0;
+        .menu-item {
+          display: inline-block;
+          a {
+            padding: 0 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: map-get($color, black);
+          }
+        }
+      }
+    }
+    .search {
+      float: right;
+      .btn-search {
+        width: 45px;
+        height: 45px;
+        background: none;
+        outline: none;
+        line-height: 45px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin-right: 40px;
+      }
+    }
+  }
+}
+.slides {
+  background: url(../images/slides/slide.png);
+  height: 650px;
+  width: 100%;
+  .men {
+    display: block;
+    text-align: center;
+    padding: 170px 0 170px;
+    .for-men {
+      font-size: 18px;
+    }
+    .extra {
+      font-size: 80px;
+      padding-left: 340px;
+      font-weight: bold;
+    }
+    .slae {
+      font-size: 16px;
+      text-decoration: none;
+      text-decoration: underline;
+      color: map-get($color, black);
+
+      &:hover {
+        color: map-get($color, green);
+      }
+      .fas:before {
+        padding: 0 10px;
+      }
+    }
+  }
+}
