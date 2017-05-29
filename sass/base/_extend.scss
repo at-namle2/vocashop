@@ -42,7 +42,7 @@
       }
     }
     .btn-button {
-      padding: 3px 15px;
+      padding: 7px 18px;
       color: map-get($color, gray_4);
       font-size: 12px;
       text-transform: uppercase;
@@ -98,4 +98,36 @@
     position: absolute;
     z-index: 9;
   }
+}
+%left {
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  background: transparent;
+  color: map-get($color, gray_5);
+  font-size: 22px;
+  background-color: map-get($color, white);
+  border: 1px solid map-get($color, gray_5);
+  .fa-angle-left:before {
+    padding-left: 10px;
   }
+  &:hover {
+    background-color: map-get($color, green);
+  }
+}
+%right {
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  background: transparent;
+  color: map-get($color, gray_5);
+  font-size: 22px;
+  background-color: map-get($color, white);
+  border: 1px solid map-get($color, gray_5);
+  .fa-angle-right:before {
+    padding-left: 10px;
+  }
+  &:hover {
+    background-color: map-get($color, green);
+  }
+}
