@@ -66,6 +66,7 @@
     background: map-get($color, white);
     padding: 30px;
     .title-news {
+      font-family: 'Noticia Text', serif;
       font-size: 20px;
       font-weight: bold;
       color: map-get($color, black);

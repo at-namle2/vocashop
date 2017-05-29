@@ -87,7 +87,7 @@
           text-transform: uppercase;
           padding-right: 50px;
           text-decoration: none;
-          font-weight: bold;
+          font-family: 'Catamaran', sans-serif;
           color: map-get($color, black);
           &:hover {
             color: map-get($color, green);
