@@ -39,6 +39,13 @@
       .fat {
         color: map-get($color, yellow);
         padding-left: 5px;
+        font-size: 13px;
+      }
+      .price-old {
+        color: map-get($color, gray_4);
+        padding-left: 5px;
+        text-decoration: underline;
+        font-size: 14px;
       }
     }
     .btn-button {

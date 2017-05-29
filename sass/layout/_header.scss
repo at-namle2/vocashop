@@ -139,21 +139,19 @@
     }
     .extra {
       font-size: 80px;
-      padding-left: 340px;
+      padding-left: 318px;
       font-weight: bold;
       .ex1 {
         margin-left: -20px;
       }
       .ex2 {
-        margin-left: 82px;
+        margin-left: 56px;
       }
     }
     .slae {
-      font-size: 16px;
-      text-decoration: none;
       text-decoration: underline;
       color: map-get($color, black);
-
+      font-size: 16px;
       &:hover {
         color: map-get($color, green);
       }
