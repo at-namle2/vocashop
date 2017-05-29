@@ -139,3 +139,14 @@
     background-color: map-get($color, green);
   }
 }
+%sub-menu {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 230px;
+  background-color: map-get($color, white);
+  padding: 8px 14px;
+  top: 100px;
+  list-style: none;
+  line-height: 2.8;
+}

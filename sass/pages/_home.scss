@@ -12,6 +12,7 @@
   .gallery-item:nth-child(4) {
     margin-right: 0;
     float: left;
+    width: 262px;
     @extend %jacket;
   }
 }
@@ -149,7 +150,8 @@
         outline: none;
         text-transform: uppercase;
         color: white;
-        background: black;
+        background: map-get($color, black);
+        transition: all 0.3s linear;
         &:hover {
           background: map-get($color, green);
         }

@@ -117,6 +117,9 @@
         text-decoration: none;
         color: map-get($color, black_3);
         font-weight: 600;
+        &:hover {
+          color: map-get($color, green);
+        }
       }
     }
     .social {

@@ -108,8 +108,29 @@
             padding-left: 5px;
           }
         }
-      }
-    }
+        .sub-menu {
+          @extend %sub-menu;
+          .sub-menu-item {
+            border-bottom: 1px dotted map-get($color, gray_4);
+            a {
+              color: map-get($color, gray_4);
+              padding: 0 12px;
+              text-decoration: none;
+              display: block;
+              cursor: pointer;
+              font-size: 14px;
+              text-transform: uppercase;
+              &:hover {
+                color: map-get($color, green);
+              }
+            }
+          }
+        }
+        .menu-item:hover .sub-menu {
+          display: block;
+         }
+       }
+     }
     .search {
       float: right;
       .btn-search {
